@@ -1,0 +1,564 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+ .logo {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+    font-size: 30px;
+}
+ .logo {
+font-size:40px ;
+}
+ .logo span {
+    color: #ce1212;
+    margin-left: -5px;
+}
+.navbar svg {
+    width: 30px;
+}
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.navbar ul li a{
+    color:#858595;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.navbar ul li .home{
+    color: black;
+}
+.navbar ul li .home {
+border-bottom:2px solid #ce1212;
+}
+.navbar ul li {
+    position: relative;
+    overflow: hidden;
+}
+.navbar ul li::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ce1212;
+}
+.navbar ul li:hover::before {
+right: 0;
+}
+li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 100vh;
+    background-color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.img-meal img {
+    width: 100%;
+}
+.content-flex-item {
+    flex:1 1 40%;
+}
+.content h2 {
+    font-family: "Amatic SC",sans-serif;
+    font-size: 65px;
+    margin:20px 0;
+}
+.content p {
+    margin-bottom: 35px;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.btn-group {
+    display: flex;
+align-items: center;
+gap: 50px;
+
+}
+.btn-group .booking {
+    padding:15px 30px;
+    background-color: #ce1212;
+    border-radius: 0 20px 20px 20px;
+} 
+.btn-group .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border-radius: 50%;
+}
+.play-icon svg {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.play-icon {
+    background: linear-gradient(to right ,#ce1212 0% 50%,transparent 50% 100%);
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.btn-group a {
+    color: black;
+    display: flex;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 19px;
+    transition: color 0.5s;
+}
+.btn-group a:hover{
+    color: #ce1212;
+}
+.chefs ,.contact{
+    margin: auto;
+    width: 80%;
+    padding: 5%;
+}
+.chefs * , .gallery *{
+    text-align: center;
+}
+.chef-card {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chef-card img {
+    width: 100%;
+}
+.chefs h6,.gallery h6 ,.contact h6{
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 17px;
+    color: grey;
+    font-weight: 400px;
+}
+.chefs p, .gallery p, .contact p {
+    font-family: "Amatic SC",sans-serif;
+    font-size: 50px;
+}
+.cards p {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    color: grey;
+
+}
+.chefs p span,.gallery p span, .contact p span {
+    color: #ce1212;
+}
+.card-content {
+    padding: 25px;
+}
+.chefs .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.chef-card {
+    flex: 0 1 calc(33.3333% - 50px);
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s 0s;
+}
+.chef-card:hover {
+    transform: scale(1.1);
+    
+}
+.chef-card:hover .social {
+   transform: translate(0%);
+   transition: transform 0.5s 1s;
+}
+ .social ul {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+ }
+.social {
+    background-color: #ffffff4d;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transform: translateX(130%);
+}
+.social i {
+    color:rgb(55 55 63 / 40%);
+    font-size: 25px;
+}
+.gallery {
+    background-color: #eeeeee;
+    padding: 5%;
+}
+
+    .gallery-column .content h2 {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400px;
+    margin-bottom: 10px;
+}
+ .gallery-column .content p {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400px;
+    margin: 0;
+}
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.gallery-column {
+    flex: 1 1 calc(33.333% - 20px);
+}
+.gallery-column img {
+    width: 100%;
+}
+.gallery-column-item {
+    position: relative;
+}
+.gallery-column-item .content{
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #00000096;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(130%);
+    transition: transform 1s 0s;
+}
+.gallery-column-item:hover .content {
+    transform: translateY(0%);
+}
+.gallery-column-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-column-item {
+   margin: 20px;
+   overflow: hidden;
+}
+.align-start {
+    align-self: flex-start;
+}
+.contact img {
+    width: 100%;
+}
+.info-item p,.btn-container button{
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 17px;
+    margin: 10px auto;
+}
+.info-item h3 {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 21px;
+    margin: 0;
+}
+.contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.info-item {
+    flex: 1 1 40%;
+    display: flex;
+    padding: 20px 30px;
+    gap: 20px;
+   justify-content: flex-start;
+    align-items: center;
+    background-color:#eeeeee;
+}
+
+.info-item .icon i {
+    font-size: 25px;
+    color: #fff;
+    background-color: #ce1212;
+   padding: 20px;
+    border-radius: 50%;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.contact form * {
+    width: 98%;
+}
+.contact form .input-group {
+    display: flex;
+    gap: 30px;
+   justify-content: space-between;
+    align-items: center;
+}
+input ,textarea {
+    padding: 10px;
+    border: 2px solid hsl( 0, calc(0% + 10%), calc(100% - 10%) );
+}
+.contact form .input-group input {
+    flex: 1 1 50%;
+}
+.form-container {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.btn-container {
+    text-align: center;
+}
+.btn-container button {
+    margin-top: 25px;
+    width: 160px;
+    padding: 15px;
+    border: none;
+    background-color: #ce1212;
+    border-radius: 50px;
+}
+footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3% 10%;
+    gap: 5%;
+}
+footer .logo {
+    color: #fff;
+    font-size: 25px;
+}
+footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer .logo img {
+    width: 40px;
+}
+footer p {
+    color: #fff;
+}
+footer .about h3 {
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+footer .newsletter h3,footer .info h3 {
+    color: #fff;
+    padding-bottom: 10px;
+}
+footer .about ul,footer .newsletter ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+footer .info ul {
+    color: #fff;
+}
+footer .info ul li{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding: 10px 0;
+}
+footer .newsletter ul li {
+   flex: 0 1 48%;
+    padding: 5px 0;
+    transition:transform 0.5s 0s, background-color 0.5s 0s;
+    overflow: hidden;
+}
+footer .newsletter ul li:hover {
+   background-color: #8585956b;
+   transform: translateX(20px);
+}
+footer .newsletter ul li::before {
+ content: ">";
+ color: #fff;
+ margin-right: 10px; 
+}
+footer .about ul li i {
+    color: #fff;
+    font-size: 25px;
+}
+footer .info ul li i {
+    color: #ce1212;
+    font-size: 25px;
+}
+footer p,footer h3,footer li {
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 19px;
+}
+footer .newsletter {
+    flex: 0 1 45%;
+}
+footer .details {
+    flex: 0 1 20%;
+}
+.newsletter-input-group form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.newsletter-input-group input{
+   flex: 0 1 85%;
+}
+.newsletter-input-group button{
+   flex: 0 1 15%;
+   background-color: #ce1212;
+   border: none;
+   padding: 12px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+@media screen and (max-width:500px) {
+    .header {
+        height: 70vh;
+    }
+    .navbar {
+        padding: 0 10%;
+    }
+}
+@media screen and (min-width:501px) and (max-width:980px) {
+    .header {
+        height: 75vh;
+    }
+}
+@media screen and (max-width:980px) {
+    .content-flex-item {
+        flex:1 1 80%;
+        text-align: center;
+    }  
+    .header {
+        padding: 20% 10% 10%;
+    }
+    .chef-card {
+        flex: 0 1 100%;
+    }
+    .gallery-column {
+        flex: 1 1 100%;
+    }
+    footer .details ,footer .newsletter {
+        flex: 0 1 100%;
+    }
+    .btn-group {
+        justify-content: center;
+    }
+}
+@media screen and (min-width:981px) and (max-width:1187px){
+    .content-flex-item {
+        flex:1 1 40%;
+        text-align: center;
+    }  
+    .header {
+        height: 75vh;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0 5%;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center; 
+        gap: 40px;  
+     }
+     .btn-group .booking {
+        padding: 10px 25px;
+     }
+}
+@media screen and (min-width:1188px) and (max-width:1350px) {
+    .header {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0 4%;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;   
+     }
+}
+@media screen and (min-width:1351px) {
+    .header {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0 9%;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;   
+     }
+}
